@@ -101,4 +101,6 @@ interface RequestContract
      * @return bool
      */
     public function ajax() : bool;
+
+    public function getGlobals() : void;
 }
