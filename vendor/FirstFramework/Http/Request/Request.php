@@ -17,7 +17,7 @@ class Request implements RequestContract
 
     public function __construct()
     {
-        //$this->getGlobals();
+        $this->getGlobals();
     }
 
     public function method(): string

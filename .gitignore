@@ -2,3 +2,5 @@
 */vendor/FirstFramework/
 /vendor/composer/
 /vendor/autoload.php
+/vendor/bin/
+/vendor/symfony/

@@ -1,15 +1,14 @@
 {
-  "name": "$vendor_name$/$package_name$",
-  "description": "$description$",
-  "minimum-stability": "$stability$",
-  "license": "$license$",
-  "authors": [
-    {
-      "name": "$author$",
-      "email": "$email$"
-    }
-  ],
+  "name": "dmitrygusev/first-framework",
+  "description": "This is a simple php framework",
+  "type": "project",
   "require": {
-    $END$
+    "symfony/var-dumper": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "FirstFramework\\": "vendor/FirstFramework/"
+    }
   }
 }
