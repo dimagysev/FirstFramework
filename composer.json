@@ -1,0 +1,12 @@
+{
+    "name": "dmitrygusev/first-framework",
+    "description": "This is a simple php framework",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "FirstFramework\\": "vendor/FirstFramework/"
+        }
+    }
+}

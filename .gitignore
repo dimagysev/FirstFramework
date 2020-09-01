@@ -1,0 +1,4 @@
+.idea
+*/vendor/FirstFramework/
+/vendor/composer/
+/vendor/autoload.php
