@@ -26,7 +26,7 @@ class RouteCollection implements RouteCollectionContract
      */
     public function post(string $name, string $uri, $action, array $paramPattern = []): RouteContract
     {
-        return $this->collection[$name] = new Route(['POST'], $name, $uri, $action);
+        return $this->collection[$name] = new Route(['POST'], $name, $uri, $action, $paramPattern);
     }
 
     /**
@@ -42,7 +42,7 @@ class RouteCollection implements RouteCollectionContract
      */
     public function put(string $name, string $uri, $action, array $paramPattern = []): RouteContract
     {
-        return $this->collection[$name] = new Route(['PUT'], $name, $uri, $action);
+        return $this->collection[$name] = new Route(['PUT'], $name, $uri, $action, $paramPattern);
     }
 
     /**
@@ -50,7 +50,7 @@ class RouteCollection implements RouteCollectionContract
      */
     public function patch(string $name, string $uri, $action, array $paramPattern = []): RouteContract
     {
-        return $this->collection[$name] = new Route(['PATCH'], $name, $uri, $action);
+        return $this->collection[$name] = new Route(['PATCH'], $name, $uri, $action, $paramPattern);
     }
 
     /**
@@ -58,7 +58,7 @@ class RouteCollection implements RouteCollectionContract
      */
     public function delete(string $name, string $uri, $action, array $paramPattern = []): RouteContract
     {
-        return $this->collection[$name] = new Route(['DELETE'], $name, $uri, $action);
+        return $this->collection[$name] = new Route(['DELETE'], $name, $uri, $action, $paramPattern);
     }
 
     /**

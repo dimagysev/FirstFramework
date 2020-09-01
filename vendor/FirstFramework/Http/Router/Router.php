@@ -33,7 +33,7 @@ class Router implements RouterContract
                 return static::$route = $route;
             }
         }
-        if (true){
+        if (DEBUG){
             if ($this->badMethod()){
                 throw new \Exception('Bad method');
             }

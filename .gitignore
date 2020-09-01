@@ -4,4 +4,4 @@
 /vendor/autoload.php
 /vendor/bin/
 /vendor/symfony/
-/app/Controllers/
+/app/
