@@ -32,13 +32,13 @@ interface RequestContract
      * @param string $key
      * @return mixed
      */
-    public function coockie(string $key);
+    public function cookie(string $key);
 
     /**
      * @param string $key
      * @return bool
      */
-    public function hasCoockie(string $key):bool;
+    public function hasCookie(string $key):bool;
 
     /**
      * @param string $key
@@ -95,7 +95,13 @@ interface RequestContract
      * @param string $key
      * @return bool
      */
-    public function has(string $key) : bool;
+    public function hasQueryParam(string $key) : bool;
+
+    /**
+     * @param string $key
+     * @return bool
+     */
+    public function hasBodyParam(string $key) : bool;
 
     /**
      * @return bool
