@@ -11,6 +11,8 @@ define('DEBUG', true);
 
 require_once VENDOR . 'autoload.php';
 
+(\Dotenv\Dotenv::createUnsafeImmutable(ROOT))->load();
+
 try {
 
     $request = new FirstFramework\Http\Request\Request();
@@ -18,6 +20,8 @@ try {
     $route = (new \FirstFramework\Http\Router\Router($routes, $request))->match();
     $result = call_user_func($route->getAction(), ...array_values($route->getParams()));
     (new \FirstFramework\Http\Response\Response($result))->send();
+    $pdo = (\FirstFramework\DB\DBConnection::instance())->pdo();
+    dump($pdo);
 
 }catch (Throwable $e){
     dump($e);

@@ -1,7 +1,10 @@
 .idea
-*/vendor/FirstFramework/
-/vendor/composer/
-/vendor/autoload.php
+!/vendor/FirstFramework/
 /vendor/bin/
+/vendor/composer/
+/vendor/graham-campbell/
+/vendor/phpoption/
 /vendor/symfony/
-/app/
+/vendor/vlucas
+/app
+.env

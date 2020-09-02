@@ -3,7 +3,9 @@
   "description": "This is a simple php framework",
   "type": "project",
   "require": {
-    "symfony/var-dumper": "^5.1"
+    "symfony/var-dumper": "^5.1",
+    "vlucas/phpdotenv": "^5.1",
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {
