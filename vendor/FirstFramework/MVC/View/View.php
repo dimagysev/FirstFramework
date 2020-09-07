@@ -1,9 +1,8 @@
 <?php
 
 
-namespace FirstFramework\MVC;
+namespace FirstFramework\MVC\View;
 
-use FirstFramework\MVC\ViewContract;
 
 class View implements ViewContract
 {

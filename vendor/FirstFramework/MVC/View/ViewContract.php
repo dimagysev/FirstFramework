@@ -1,27 +1,27 @@
 <?php
 
 
-namespace FirstFramework\MVC;
+namespace FirstFramework\MVC\View;
 
 
 interface ViewContract
 {
     /**
-     * @param  string  $path ['folder.filename']
+     * @param  string  $path
      *
      * @return ViewContract
      */
     public function setView(string $path): ViewContract;
 
     /**
-     * @param  string  $path ['folder.filename']
+     * @param  string  $path
      *
      * @return ViewContract
      */
     public function setLayout(string $path): ViewContract;
 
     /**
-     * @param  array  $variables [$name => $value]
+     * @param  array  $variables
      *
      * @return ViewContract
      */
@@ -30,5 +30,5 @@ interface ViewContract
     /**
      * @return string
      */
-    public function render() : string;
+    public function render(): string;
 }

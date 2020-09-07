@@ -1,9 +1,9 @@
 <?php
 
 
-namespace FirstFramework\MVC;
+namespace FirstFramework\MVC\Controller;
 
-use FirstFramework\MVC\View;
+use FirstFramework\MVC\View\View;
 
 abstract class Controller
 {
