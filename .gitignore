@@ -6,5 +6,4 @@
 /vendor/phpoption/
 /vendor/symfony/
 /vendor/vlucas
-/app
 .env
